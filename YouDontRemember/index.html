@@ -5,24 +5,44 @@
     <meta charset="utf-8" />
     <title>You Don't Remember</title>
     <link rel="stylesheet" href="app.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <script src="Scripts/jquery-2.2.0.min.js"></script>
     <script src="app.js"></script>
 </head>
-<body>
-    <div id="screenNewWords">
-        <h1>Remember random words</h1>
-        <div id="wordlist">
-            
+<body class="noselect">
+    <div class="screen" id="screenNewWords">
+        <h1>Remember these words (Level <span id="levelNumber"></span>)</h1>
+        <div id="wordlist" class="wordlist">
+           
         </div>
         <strong id="timer">
 
         </strong>
     </div>
-    <div id="screenPickWords">
-        <h1>Pick Words</h1>
+    <div class="screen" id="screenPickWords" style="display:none;">
+        <h1 id="titlePickWords">
+            Pick words (<span id="pickCount"></span>/<span id="maxPickable"></span>)
+        </h1>
+        <h1 id="titleYouWon">
+            You won!
+        </h1>
+        <h1 id="titleYouLoose">
+            You Lost!
+        </h1>
 
         <div id="pickWordlist">
 
+        </div>
+        <div class="center">
+            <div class="big-footer-button" id="btnCheckWords">
+                Check
+            </div>
+            <div class="big-footer-button" id="btnTryAgain">
+                Try again
+            </div>
+            <div class="big-footer-button" id="btnNextLevel">
+                Next level
+            </div>
         </div>
     </div>
 </body>

@@ -1,7 +1,70 @@
 ﻿body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 span {
     font-style: italic;
+}
+
+h1{
+    margin:20px;
+    text-align:center;
+}
+
+.wordlist{
+    text-align:center;
+}
+
+.screen{
+    margin:20px;
+}
+
+.word{
+    margin:20px;
+    user-select:none;
+}
+
+.clickable-word{
+    cursor:pointer;
+    border: 1px solid black;
+    border-radius:3px;
+    margin:20px;
+    padding:10px;
+    display:inline-block;
+    user-select:none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.clickable-word.selected{
+    background-color:lightgray;
+    user-select:none;
+}
+
+.center{
+    text-align:center;
+}
+
+.big-footer-button{
+    display:inline-block;
+    background-color:gray;
+    padding:20px;
+    background-color:slategray;
+    cursor:pointer;
+}
+
+.clickable-word.correct-word{
+    background-color:greenyellow;
+}
+
+.clickable-word.wrong-word{
+    background-color:darkred;
 }
